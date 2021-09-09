@@ -1,0 +1,11 @@
+<%- include("partials/header") -%>
+<h1>Home</h1>
+<p><%= startcontent %> </p>
+<% posts.forEach(function(v){ %>
+   <h1><%=v.title%></h1>
+  <p><%= v.content %></p>
+  <% if(value == v.title){ %>
+    <% console.log("Match Found"); %>
+<%  }  %>
+<%});%>
+<%- include("partials/footer") -%>
